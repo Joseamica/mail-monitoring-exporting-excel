@@ -1,0 +1,29 @@
+{
+  "name": "monitoreo-gmail",
+  "version": "1.0.0",
+  "description": "Automated Gmail PDF extraction and Excel consolidation system",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc -w",
+    "start:dev": "ts-node --transpile-only src/index.ts"
+  },
+  "keywords": ["gmail", "pdf", "excel", "automation", "nodejs"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "googleapis": "^133.0.0",
+    "pdf-parse": "^1.1.1",
+    "exceljs": "^4.4.0",
+    "dotenv": "^16.4.5",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.10.5",
+    "@types/pdf-parse": "^1.1.4"
+  }
+}
